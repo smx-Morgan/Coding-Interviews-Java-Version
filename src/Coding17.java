@@ -1,4 +1,5 @@
 public class Coding17 {
+    //这里是输出测试
     public static void main(String[] args) {
         Coding17 code = new Coding17();
         code.printNumbers(3);
@@ -10,6 +11,7 @@ public class Coding17 {
             printMaxDigits(number,n,0);
         }
     }
+    //可以通过修改sout函数使得开头的0不输出
     public void printMaxDigits(char[] number,int length,int index){
         if(index == length -1){
             System.out.println(String.valueOf(number));
