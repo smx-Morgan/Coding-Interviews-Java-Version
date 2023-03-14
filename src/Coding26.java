@@ -1,4 +1,7 @@
+import java.util.List;
+
 public class Coding26 {
+    List<Integer> list;
     public boolean isSubStructure(TreeNode A, TreeNode B) {
         return dfs(A,B);
     }
