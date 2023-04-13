@@ -5,7 +5,6 @@ import java.util.Queue;
 public class Coding41 {
     class MedianFinder {
         Queue<Integer> A,B;
-        /** initialize your data structure here. */
         public MedianFinder() {
             A = new PriorityQueue<>();//小根堆
             B= new PriorityQueue<>(Comparator.reverseOrder());//大顶堆
@@ -24,7 +23,7 @@ public class Coding41 {
             if(A.size() != B.size()){
                 return A.peek();
             }else{
-                return (A.peek() + B.peek())/2;
+                return (A.peek() + B.peek())/2.0;
             }
         }
     }
